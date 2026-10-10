@@ -105,7 +105,7 @@ export function DashboardPage() {
           <div className="stack-sm">
             {filters.map((group) => (
               <div key={group.id} className="inline">
-                <span className="grow strong">{group.name}</span>
+                <span className="grow font-semibold">{group.name}</span>
                 <span className="muted">{group.options.length} options</span>
               </div>
             ))}
@@ -123,7 +123,7 @@ export function DashboardPage() {
                   <span className="card-title truncate block">
                     {title.title}
                   </span>
-                  <span className="muted small">{title.meta}</span>
+                  <span className="muted text-xs">{title.meta}</span>
                 </span>
                 <span className="play-dot">
                   <PlayIcon size={14} />

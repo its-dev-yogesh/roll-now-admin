@@ -159,8 +159,8 @@ export function FiltersPage() {
                   <div key={option.id} className="list-row">
                     {option.imageUrl && <Thumb seed={option.id} src={option.imageUrl} width={64} radius={8} fit="cover" />}
                     <div className="grow">
-                      <div className="strong">{option.label}</div>
-                      <div className="muted small">
+                      <div className="font-semibold">{option.label}</div>
+                      <div className="muted text-xs">
                         /{option.slug} · used by {usage(group.id, option.id)}
                       </div>
                     </div>
@@ -183,7 +183,7 @@ export function FiltersPage() {
                     </Button>
                   </div>
                 ))}
-                {options.length === 0 && <p className="muted small">No options{search && " match your search"}.</p>}
+                {options.length === 0 && <p className="muted text-xs">No options{search && " match your search"}.</p>}
               </div>
             </Card>
           );

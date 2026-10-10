@@ -20,7 +20,7 @@ export function TopBar({ onSlot }: { onSlot: (node: HTMLDivElement | null) => vo
         <span className="avatar">{me?.name[0] ?? "?"}</span>
         <span>
           {me?.name}
-          <span className="muted small block">{me?.role?.name}</span>
+          <span className="muted text-xs block">{me?.role?.name}</span>
         </span>
         <Button variant="ghost" small iconOnly aria-label="Sign out" onClick={() => void logout()}>
           <CloseIcon size={16} />

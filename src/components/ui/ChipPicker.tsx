@@ -16,7 +16,7 @@ export interface ChipPickerProps {
 
 /** Toggleable pills; multi-select keeps pick order. */
 export function ChipPicker({ options, selected, onChange, single, emptyMessage = "Nothing to pick yet." }: ChipPickerProps) {
-  if (options.length === 0) return <p className="muted small">{emptyMessage}</p>;
+  if (options.length === 0) return <p className="muted text-xs">{emptyMessage}</p>;
   return (
     <div className="chips">
       {options.map((option) => {

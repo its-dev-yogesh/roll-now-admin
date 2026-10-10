@@ -116,15 +116,15 @@ export function ReviewsPage() {
         >
           <div className="stack">
             <MediaCell seed={open.seed} src={open.src} title={open.title} meta={`${CONTENT_LABEL[open.type]} · ${open.meta}`} width={160} radius={14} />
-            <p className="muted small">Watch the media, then confirm it passes each rule. Approve needs every rule confirmed; Reject needs a note for the uploader.</p>
+            <p className="muted text-xs">Watch the media, then confirm it passes each rule. Approve needs every rule confirmed; Reject needs a note for the uploader.</p>
             <div className="list">
               {checklist.map((rule) => (
                 <div key={rule.id} className="list-row">
                   <div className="grow">
-                    <div className="inline strong">
+                    <div className="inline font-semibold">
                       {rule.title} <Badge tone={SEVERITY_TONE[rule.severity]}>{capitalize(rule.severity)}</Badge>
                     </div>
-                    <div className="muted small">{rule.description}</div>
+                    <div className="muted text-xs">{rule.description}</div>
                   </div>
                   <Switch
                     label={`Passes: ${rule.title}`}

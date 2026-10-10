@@ -26,8 +26,8 @@ export function RulesPage() {
           header: "Rule",
           render: (row) => (
             <div>
-              <div className="strong">{row.title}</div>
-              <div className="muted small">{row.description}</div>
+              <div className="font-semibold">{row.title}</div>
+              <div className="muted text-xs">{row.description}</div>
             </div>
           ),
         },

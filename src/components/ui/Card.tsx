@@ -17,7 +17,7 @@ export function Card({ title, meta, actions, flush, className, children }: CardP
         <header className="card-header">
           <div className="grow">
             {title && <h2 className="card-title">{title}</h2>}
-            {meta && <p className="muted small">{meta}</p>}
+            {meta && <p className="muted text-xs">{meta}</p>}
           </div>
           {actions}
         </header>
@@ -38,7 +38,7 @@ export function StatCard({ label, value, meta }: StatCardProps) {
     <div className="card stat">
       <span className="stat-label">{label}</span>
       <span className="stat-value">{value}</span>
-      {meta && <span className="muted small">{meta}</span>}
+      {meta && <span className="muted text-xs">{meta}</span>}
     </div>
   );
 }

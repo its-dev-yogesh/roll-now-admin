@@ -26,11 +26,11 @@ export function RolesPage() {
           header: "Role",
           render: (row) => (
             <div>
-              <div className="inline strong">
+              <div className="inline font-semibold">
                 {row.name}
                 {row.system && <Badge>Built-in</Badge>}
               </div>
-              <div className="muted small">{row.description}</div>
+              <div className="muted text-xs">{row.description}</div>
             </div>
           ),
         },

@@ -12,7 +12,7 @@ export function PageHeader({ title, description, actions, section }: PageHeaderP
   return (
     <div className="page-header">
       <div>
-        <h1 className={section ? "section-title" : "page-title"}>{title}</h1>
+        <h1 className={section ? "text-md font-light" : "page-title"}>{title}</h1>
         {description && <p className="page-desc">{description}</p>}
       </div>
       {actions && <div className="inline">{actions}</div>}

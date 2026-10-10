@@ -3,7 +3,7 @@
  * roll-now/src/app/globals.css), then base, layout, components and utilities. Components in
  * src/components use these class names; pages compose components and never add their own CSS.
  */
-@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap");
 
 /* ───────── tokens ───────── */
 
@@ -358,12 +358,6 @@ img {
 
 .page-title {
   font-size: 28px;
-  font-weight: 700;
-  letter-spacing: -0.02em;
-}
-
-.section-title {
-  font-size: 22px;
   font-weight: 700;
   letter-spacing: -0.02em;
 }
@@ -1082,12 +1076,48 @@ textarea.control {
   color: var(--text-muted);
 }
 
-.small {
+.text-xs {
   font-size: 12px;
 }
 
-.strong {
+.text-sm {
+  font-size: 13px;
+}
+
+.text-base {
+  font-size: 14px;
+}
+
+.text-md {
+  font-size: 16px;
+}
+
+.text-lg {
+  font-size: 18px;
+}
+
+.text-xl {
+  font-size: 22px;
+}
+
+.font-light {
+  font-weight: 300;
+}
+
+.font-normal {
+  font-weight: 400;
+}
+
+.font-medium {
+  font-weight: 500;
+}
+
+.font-semibold {
   font-weight: 600;
+}
+
+.font-bold {
+  font-weight: 700;
 }
 
 .mono {

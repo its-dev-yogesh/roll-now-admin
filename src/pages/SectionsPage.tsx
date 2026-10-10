@@ -225,7 +225,7 @@ export function SectionsPage() {
                     <figcaption className="truncate">{item.label}</figcaption>
                   </figure>
                 ))}
-                {preview.length === 0 && <p className="muted small">{section.source.type === "auto" && section.source.rule === "continue-watching" ? "Filled per viewer from their watch history." : "Nothing to show yet — the section is skipped on the site."}</p>}
+                {preview.length === 0 && <p className="muted text-xs">{section.source.type === "auto" && section.source.rule === "continue-watching" ? "Filled per viewer from their watch history." : "Nothing to show yet — the section is skipped on the site."}</p>}
               </div>
             </Card>
           );

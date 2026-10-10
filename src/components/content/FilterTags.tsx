@@ -12,7 +12,7 @@ export function FilterTags({ groups, values, groupId, max = 3 }: { groups: Filte
           {label}
         </span>
       ))}
-      {labels.length > max && <span className="muted small">+{labels.length - max}</span>}
+      {labels.length > max && <span className="muted text-xs">+{labels.length - max}</span>}
     </span>
   );
 }
